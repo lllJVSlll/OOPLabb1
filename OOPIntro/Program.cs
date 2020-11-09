@@ -6,6 +6,8 @@ namespace OOPIntro
     {
         static void Main(string[] args)
         {
+
+            
             var kund = new Customer();
             while (true)
             {
@@ -14,6 +16,7 @@ namespace OOPIntro
                 {
                     Console.WriteLine("What do you want to buy?");
                     var product = new Product() { _productName = Console.ReadLine() };
+                    kund._cart.Add(product);
                 }
                 else
                     break;
@@ -23,7 +26,7 @@ namespace OOPIntro
                     foreach (var item in kund._cart)
                         Console.WriteLine(item._productName);
                 else
-                    Console.WriteLine("Suck a duck!");
+                    Console.WriteLine("Suck A Duck!");    
             }
         }
     }

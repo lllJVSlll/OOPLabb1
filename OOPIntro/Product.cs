@@ -8,4 +8,10 @@ namespace OOPIntro
     {
         public string _productName;
     }
+
+    class ProductChild : Product
+    {
+        public string _smak1 = "Riskaka Pizza";
+        public string _smak2 = "Riskaka Popcorn";
+    }
 }
